@@ -2,9 +2,9 @@ FROM debian:latest
 
 RUN apt-get update
 
-RUN apt-get -y upgrade
+RUN apt-get -y eupgrade
 
-RUN apt-get -y install curl
+RUN apt-get -y install curl python
 
 RUN curl https://raw.githubusercontent.com/mozilla/html5-lint/master/html5check.py > /usr/local/bin/html5check.py
 
