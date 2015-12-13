@@ -2,7 +2,7 @@ FROM alpine:latest
 
 RUN apk update
 
-RUN apk add bash wget python openssh
+RUN apk add bash wget python openssh util-linux
 
 RUN chsh -s /bin/bash
 
