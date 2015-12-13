@@ -1,10 +1,8 @@
-FROM alpine:latest
+FROM debian:latest
 
-RUN apk update
+RUN apt-get update
 
-RUN apk add bash wget python openssh util-linux
-
-RUN chsh -s /bin/bash
+RUN apt-get install -y python openssh
 
 RUN wget -o /usr/local/bin/html5check.py https://raw.githubusercontent.com/mozilla/html5-lint/master/html5check.py
 
